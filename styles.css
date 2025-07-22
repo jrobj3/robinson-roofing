@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
 .container {
@@ -86,6 +87,14 @@ nav ul li a:hover {
 
 section {
     padding: 3rem 0;
+    background-color: #f5f5f5;
+}
+
+section .container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 h2 {
@@ -104,6 +113,9 @@ h2 {
 .service-item, .project-item {
     text-align: center;
     padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .project-item img {
@@ -158,10 +170,6 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    body {
-        background-color: #f5f5f5;
-    }
-
     .hamburger {
         display: block;
     }
@@ -197,5 +205,9 @@ footer {
 
     header h1 {
         font-size: 1.5rem;
+    }
+
+    section .container {
+        padding: 1rem;
     }
 }

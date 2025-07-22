@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robinson Roofing - Quality Roofing Services in Texas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Robinson Roofing</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#appointment">Book Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="admin.html">Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Robinson Roofing</h2>
+            <p>Your trusted roofing experts in Texas. Quality craftsmanship, reliable service, and customer satisfaction guaranteed.</p>
+            <a href="#appointment" class="btn">Book an Appointment</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Roof Installation</h3>
+                    <p>Professional installation of durable, high-quality roofs tailored to Texas weather.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Roof Repairs</h3>
+                    <p>Fast and reliable repair services to keep your roof in top condition.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Roof Inspections</h3>
+                    <p>Comprehensive inspections to ensure your roof's longevity and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="Roofing Project 1">
+                    <p>Residential Roof Replacement</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project2.jpg" alt="Roofing Project 2">
+                    <p>Commercial Roof Installation</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project3.jpg" alt="Roofing Project 3">
+                    <p>Storm Damage Repair</p>
+                </div>
+            </div>
+            <p>To update project photos, replace the image files in the "images" folder and update the src paths in the HTML.</p>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@robinsonroofing.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Texas Ave, Austin, TX 78701</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Robinson Roofing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Appointment request submitted! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -114,6 +114,7 @@
     <script>
         document.getElementById('appointment-form').addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
+            console.log('Form submission triggered'); // Debug log
 
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
@@ -125,6 +126,7 @@
             // Phone validation: exactly 10 digits
             if (phoneDigits.length !== 10) {
                 phoneError.style.display = 'block';
+                console.log('Phone validation failed:', phoneDigits); // Debug log
                 return;
             } else {
                 phoneError.style.display = 'none';
@@ -133,6 +135,7 @@
             // Email validation: contains @ and .
             if (!email.includes('@') || !email.includes('.')) {
                 emailError.style.display = 'block';
+                console.log('Email validation failed:', email); // Debug log
                 return;
             } else {
                 emailError.style.display = 'none';
@@ -140,6 +143,7 @@
 
             // Collect form data
             const formData = new FormData(this);
+            console.log('Submitting form data:', Array.from(formData.entries())); // Debug log
 
             // Submit to Formspree via AJAX
             fetch('https://formspree.io/f/xkgzjnpy', {
@@ -150,6 +154,7 @@
                 }
             })
             .then(response => {
+                console.log('Formspree response:', response.status, response.statusText); // Debug log
                 if (response.ok) {
                     formMessage.style.display = 'block';
                     formMessage.style.color = 'green';
@@ -162,6 +167,7 @@
                 }
             })
             .catch(error => {
+                console.log('Formspree error:', error); // Debug log
                 formMessage.style.display = 'block';
                 formMessage.style.color = 'red';
                 formMessage.textContent = 'Error submitting form. Please check your connection.';

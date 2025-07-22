@@ -12,6 +12,11 @@
     <header>
         <div class="container">
             <h1>Robinson Roof Inspections</h1>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,7 +33,7 @@
     <section id="home">
         <div class="container">
             <h2>Trusted Steep Roof Inspections in Texas</h2>
-            <p>With over 10 years experience & thousands of roofs inspected, we are confident we can find even the smallest imperfection - weather related, manufacturer defect, improper installation, or simple deterioration.</p>
+            <p>With over 10 years experience & thousands of roofs inspected, we are confident we can find even the smallest imperfection - weather related, manufacturer defect, improper installation, or simple deterioration. Specializing in steep slope assessments, we serve busy contractors, realtors, and home inspectors with fast, reliable roof inspections.</p>
             <a href="#inspection" class="btn">Book Your Inspection</a>
         </div>
     </section>
@@ -114,6 +119,12 @@
     </footer>
 
     <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Form submission
         document.getElementById('inspection-form').addEventListener('submit', function(e) {
             e.preventDefault();
             console.log('Form submission triggered');

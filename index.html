@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robinson Roof Inspections - Expert Steep Roof Assessments in Texas</title>
+    <meta name="description" content="Expert steep roof inspections in Texas for contractors, realtors, and home inspectors. Get detailed photo reports and recommendations for insurance claims, repairs, or replacements.">
+    <meta name="keywords" content="steep roof inspection, roof assessment, real estate roof reports, insurance claim support, Texas roof inspectors">
+    <title>Robinson Roof Inspections - Steep Roof Assessments in Texas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,8 +16,8 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#appointment">Book Inspection</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#inspection">Book Inspection</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="admin.html">Admin Login</a></li>
                 </ul>
@@ -25,57 +27,57 @@
 
     <section id="home">
         <div class="container">
-            <h2>Welcome to Robinson Roof Inspections</h2>
-            <p>Expert roof inspections for busy contractors, realtors, and home inspection companies in Texas. Specializing in steep roof access, we deliver detailed photo reports, labeled findings, and clear recommendations for insurance claims, repairs, replacements, or confirmation of good condition.</p>
-            <a href="#appointment" class="btn">Book an Inspection</a>
+            <h2>Trusted Steep Roof Inspections in Texas</h2>
+            <p>Specializing in steep slope assessments, we serve busy contractors, realtors, and home inspectors with fast, reliable roof inspections. Our detailed photo reports and expert recommendations support insurance claims, repairs, or real estate transactions.</p>
+            <a href="#inspection" class="btn">Book Your Inspection</a>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>Our Inspection Services</h2>
+            <h2>Expert Roof Inspection Services</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <h3>Steep Roof Inspections</h3>
-                    <p>Safe and thorough assessments of high-pitch roofs using specialized equipment, tailored for contractors and realtors.</p>
+                    <h3>Steep Slope Expertise</h3>
+                    <p>Skilled inspections of high-pitch roofs using advanced safety techniques, perfect for contractors needing precise assessments.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Photo Reports & Recommendations</h3>
-                    <p>Detailed reports with labeled photos, summarizing roof conditions and recommending insurance claims, repairs, or replacements.</p>
+                    <h3>Real Estate Support</h3>
+                    <p>Comprehensive roof reports for realtors and home inspectors, ensuring smooth property transactions with clear findings.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Real Estate & Insurance Support</h3>
-                    <p>Fast, reliable inspections for home inspectors and realtors, supporting real estate transactions and insurance claims.</p>
+                    <h3>Insurance Claim Guidance</h3>
+                    <p>Detailed photo reports and recommendations to streamline insurance claims for storm damage or roof issues.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="reports">
         <div class="container">
-            <h2>Sample Inspection Reports</h2>
+            <h2>Sample Roof Reports</h2>
             <div class="projects-grid">
                 <div class="project-item">
-                    <img src="images/report1.jpg" alt="Steep Roof Inspection">
-                    <p>Steep Roof Inspection with Labeled Damage Photos</p>
+                    <img src="images/report1.jpg" alt="Steep Roof Assessment">
+                    <p>Steep Roof Assessment with Labeled Damage</p>
                 </div>
                 <div class="project-item">
                     <img src="images/report2.jpg" alt="Insurance Claim Report">
-                    <p>Insurance Claim Report for Storm Damage</p>
+                    <p>Storm Damage Report for Insurance</p>
                 </div>
                 <div class="project-item">
-                    <img src="images/report3.jpg" alt="Residential Roof Assessment">
-                    <p>Residential Roof in Good Condition</p>
+                    <img src="images/report3.jpg" alt="Roof Certification">
+                    <p>Roof Certification for Real Estate</p>
                 </div>
             </div>
-            <p>To update sample reports, replace the image files in the "images" folder and update the src paths in the HTML.</p>
+            <p>Update sample reports by replacing images in the "images" folder and adjusting src paths in the HTML.</p>
         </div>
     </section>
 
-    <section id="appointment">
+    <section id="inspection">
         <div class="container">
-            <h2>Book an Inspection</h2>
-            <form id="appointment-form">
+            <h2>Schedule Your Roof Inspection</h2>
+            <form id="inspection-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -83,7 +85,7 @@
                 <p id="email-error" style="color: red; display: none;">Please enter a valid email with @ and .</p>
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" required placeholder="555 123 4567">
-                <p id="phone-error" style="color: red; display: none;">Please enter a 10-digit phone number (spaces are okay).</p>
+                <p id="phone-error" style="color: red; display: none;">Please enter a 10-digit phone number (spaces okay).</p>
                 <label for="address">Property Address:</label>
                 <input type="text" id="address" name="address" placeholder="123 Main St, City, ST 12345">
                 <label for="date">Preferred Inspection Date:</label>
@@ -112,41 +114,36 @@
     </footer>
 
     <script>
-        document.getElementById('appointment-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
-            console.log('Form submission triggered'); // Debug log
+        document.getElementById('inspection-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submission triggered');
 
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
-            const phoneDigits = phone.replace(/\D/g, ''); // Remove non-digits
+            const phoneDigits = phone.replace(/\D/g, '');
             const phoneError = document.getElementById('phone-error');
             const emailError = document.getElementById('email-error');
             const formMessage = document.getElementById('form-message');
 
-            // Reset error messages
             phoneError.style.display = 'none';
             emailError.style.display = 'none';
             formMessage.style.display = 'none';
 
-            // Phone validation: exactly 10 digits
             if (phoneDigits.length !== 10) {
                 phoneError.style.display = 'block';
-                console.log('Phone validation failed:', phoneDigits); // Debug log
+                console.log('Phone validation failed:', phoneDigits);
                 return;
             }
 
-            // Email validation: contains @ and .
             if (!email.includes('@') || !email.includes('.')) {
                 emailError.style.display = 'block';
-                console.log('Email validation failed:', email); // Debug log
+                console.log('Email validation failed:', email);
                 return;
             }
 
-            // Collect form data
             const formData = new FormData(this);
-            console.log('Submitting form data:', Array.from(formData.entries())); // Debug log
+            console.log('Submitting form data:', Array.from(formData.entries()));
 
-            // Submit to Formspree via AJAX
             fetch('https://formspree.io/f/xkgzjnpy', {
                 method: 'POST',
                 body: formData,
@@ -155,27 +152,27 @@
                 }
             })
             .then(response => {
-                console.log('Formspree response:', response.status, response.statusText); // Debug log
+                console.log('Formspree response:', response.status, response.statusText);
                 return response.json().then(data => ({ status: response.status, data }));
             })
             .then(({ status, data }) => {
                 if (status >= 200 && status < 300) {
                     formMessage.style.display = 'block';
                     formMessage.style.color = 'green';
-                    formMessage.textContent = 'Inspection request submitted! We will contact you soon.';
-                    this.reset(); // Clear form
+                    formMessage.textContent = 'Inspection request submitted! We’ll contact you soon.';
+                    this.reset();
                 } else {
                     formMessage.style.display = 'block';
                     formMessage.style.color = 'red';
-                    formMessage.textContent = `Error submitting form: ${data.error || 'Please try again.'}`;
-                    console.log('Formspree error data:', data); // Debug log
+                    formMessage.textContent = `Error: ${data.error || 'Please try again.'}`;
+                    console.log('Formspree error data:', data);
                 }
             })
             .catch(error => {
-                console.log('Network error:', error); // Debug log
+                console.log('Network error:', error);
                 formMessage.style.display = 'block';
                 formMessage.style.color = 'red';
-                formMessage.textContent = 'Error submitting form. Please check your connection.';
+                formMessage.textContent = 'Error submitting form. Check your connection.';
             });
         });
     </script>

@@ -92,9 +92,9 @@
             <h2>Schedule Your Roof Inspection</h2>
             <form id="inspection-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required placeholder="Client Name">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" required>
+                <input type="email" id="email" name="_replyto" required placeholder="client@email.com">
                 <p id="email-error" style="color: red; display: none;">Please enter a valid email with @ and .</p>
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" required placeholder="555 123 4567">
@@ -104,7 +104,7 @@
                 <label for="date">Preferred Inspection Date:</label>
                 <input type="date" id="date" name="date" required>
                 <label for="message">Additional Details:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" placeholder="Please provide preferred time window 8-11, 11-2 or 2-5."></textarea>
                 <button type="submit" class="btn">Submit</button>
                 <p id="form-message" style="display: none; margin-top: 1rem;"></p>
             </form>
